@@ -56,12 +56,12 @@ export default function NavBar () {
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
               </Menu> */}
-              {/* <SignedOut>
+              <SignedOut>
                 <SignInButton/>
               </SignedOut>
               <SignedIn>
                 <UserButton />
-              </SignedIn> */}
+              </SignedIn>
             </Box>
           </Grid>
         </Grid>
