@@ -1,0 +1,19 @@
+.heroImageMedium {
+  background: lightgrey;
+  height: 600px;
+  width: 100%;
+}
+
+.heroBoxMedium {
+  margin: 2rem 0;
+}
+
+.alignTextCenter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.alignTextCenter .title {
+  padding-bottom: 2rem;
+}

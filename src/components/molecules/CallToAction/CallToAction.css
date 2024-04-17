@@ -1,0 +1,34 @@
+.call-to-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.learn-more {
+  /* background: black; */
+  color: white;
+  width: 180px;
+}
+
+.learn-more.outlined {
+  border: 1px solid black;
+  color: black;
+}
+
+.sign-up {
+  border: 1px solid black;
+  color: black;
+  width: 180px;
+}
+
+.sign-up:hover {
+  border: 1px solid #625F55;
+}
+
+.sign-up.hiddenBorder {
+  border: 1px solid white;
+}
+
+.sign-up.hiddenBorder:hover {
+  border: 1px solid white;
+}
