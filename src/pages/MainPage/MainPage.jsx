@@ -27,7 +27,7 @@ export const MainPage = () => {
             title={'Gospel Centrality: The Heart of Worship'}
             paragraph={"At The Modern Hymnal, we believe that gospel centrality is essential in worship practices. By placing the gospel message at the center of our worship, we are reminded of God's love, grace, and redemption. It is through the gospel that we find true meaning and purpose in our worship, and it is through the gospel that lives are transformed."}
             signUpVariant={'text'}
-            learnMoreVariant={'outlined'}
+            learnMoreVariant={'contained'}
             imageName={'steeple'}
           />
         </Grid>
@@ -45,7 +45,7 @@ export const MainPage = () => {
             title={'Deepening Worship Through Theological Richness'}
             paragraph={"At The Modern Hymnal, we believe that theological richness is of utmost importance in worship resources. Our curated music playlists, educational materials, worship elements, and liturgical guides are designed to connect individuals and churches to the worship traditions of the historic church. By emphasizing gospel centrality, historical connectedness, and theological depth, we aim to inspire a reformation in Christian worship practices."}
             signUpVariant={'text'}
-            learnMoreVariant={'outlined'}
+            learnMoreVariant={'contained'}
             imageName={'hymnal'}
           />
         </Grid>

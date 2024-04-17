@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css'
+import MHDark from '/MH-dark.svg'
 
 import { AppBar, Box, Grid, Toolbar, Typography, Button, Menu, MenuItem } from '@mui/material';
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
@@ -36,9 +37,7 @@ export default function NavBar () {
             </Box>
           </Grid>
           <Grid className='center-nav' xs={3}>
-            <Typography variant="h4">
-              MH
-            </Typography>
+            <img src={MHDark} className='nav-logo' alt="MT Dark Logo" />
           </Grid>
           <Grid className='right-nav' xs={5}>
             <Box>
