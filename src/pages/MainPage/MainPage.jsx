@@ -5,6 +5,7 @@ import NavBar from '../../components/organisms/NavBar/NavBar.jsx';
 
 import { HeroSectionLarge } from '../../components/organisms/HeroSection/HeroSectionLarge.jsx';
 import { HeroSectionMedium } from '../../components/organisms/HeroSectioinMedium/HeroSectionMedium.jsx';
+import { HeroSectionSmall } from '../../components/organisms/HeroSectionSmall/HeroSectionSmall.jsx';
 
 export const MainPage = () => {
   return (
@@ -41,12 +42,20 @@ export const MainPage = () => {
         </Grid>
         <Grid item xs={12}>
           <HeroSectionLarge
-            textSide={'left'}
+            textSide={'right'}
             title={'Deepening Worship Through Theological Richness'}
             paragraph={"At The Modern Hymnal, we believe that theological richness is of utmost importance in worship resources. Our curated music playlists, educational materials, worship elements, and liturgical guides are designed to connect individuals and churches to the worship traditions of the historic church. By emphasizing gospel centrality, historical connectedness, and theological depth, we aim to inspire a reformation in Christian worship practices."}
             signUpVariant={'text'}
             learnMoreVariant={'contained'}
             imageName={'hymnal'}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <HeroSectionSmall
+            textAlign={'center'}
+            action={'Inspire'}
+            heading={'Explore the Richness of Worship with Us'}
+            text={'Discover a collection of music playlists, educational materials, and curated worship elements that will deepen your worship experience'}
           />
         </Grid>
       </Grid>
