@@ -1,11 +1,19 @@
-import { Box, Grid } from '@mui/material';
+import { Button, Box, Grid } from '@mui/material';
 
 import './MainPage.css'
 import NavBar from '../../components/organisms/NavBar/NavBar.jsx';
 
+import { navItems } from '../../constants/navItems.js';
+import { faqList } from '../../constants/faqList.js';
+
+import { BottomNav } from '../../components/organisms/BottomNav/BottomNav.jsx';
+import { CardCarousel } from '../../components/organisms/CardCarousel/CardCarousel.jsx';
+import { CallToAction } from '../../components/molecules/CallToAction/CallToAction.jsx';
 import { HeroSectionLarge } from '../../components/organisms/HeroSection/HeroSectionLarge.jsx';
 import { HeroSectionMedium } from '../../components/organisms/HeroSectioinMedium/HeroSectionMedium.jsx';
 import { HeroSectionSmall } from '../../components/organisms/HeroSectionSmall/HeroSectionSmall.jsx';
+import { FAQs } from '../../components/organisms/FAQs/FAQs.jsx';
+import { Spacer } from '../../components/atoms/Spacer/Spacer.jsx'
 
 export const MainPage = () => {
   return (
@@ -55,9 +63,41 @@ export const MainPage = () => {
             textAlign={'center'}
             action={'Inspire'}
             heading={'Explore the Richness of Worship with Us'}
-            text={'Discover a collection of music playlists, educational materials, and curated worship elements that will deepen your worship experience'}
+            text={'Discover a collection of music playlists, educational materials, and curated worship elements that will deepen your worship experience.'}
           />
         </Grid>
+        <Spacer/>
+        <Grid item xs={12} className='center'>
+          <CardCarousel items={navItems}/>
+        </Grid>
+        <Grid item xs={12} className='center'>
+          <CallToAction signUpVariant={'text'} learnMoreVariant={'contained'} alignment='center'/>
+        </Grid>
+        <Spacer/>
+        <Grid item xs={12}>
+          <HeroSectionSmall
+            textAlign={'center'}
+            heading={'FAQs'}
+            text={'Find answers to common questsion about The Modern Hymnal and its purpose'}
+          />
+        </Grid>
+        <Spacer/>
+        <FAQs faqs={faqList}/>
+        <Spacer/>
+        <Grid item xs={12}>
+          <HeroSectionSmall
+            textAlign={'center'}
+            heading={'Still have questions?'}
+            text={'Contact us today for more information'}
+          />
+        </Grid>
+        <Spacer/>
+        <Grid item xs={12} className='center'>
+          <Button variant='contained'>Contact</Button>
+        </Grid>
+        <Spacer/>
+        <BottomNav/>
+        <Spacer/>
       </Grid>
     </Box>
   );
