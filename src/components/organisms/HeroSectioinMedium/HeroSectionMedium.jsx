@@ -3,11 +3,11 @@ import MenuBookRoundedIcon from '@mui/icons-material/MenuBookRounded';
 import PropTypes from 'prop-types';
 import './HeroSectionMedium.css'
 
-export const HeroSectionMedium = ({textSide, title, paragraph, withIcon}) => {
+export const HeroSectionMedium = ({textSide, title, paragraph, withIcon, subItems, callToAction}) => {
   return (
     <Box className={`heroBoxMedium`}>
       <Grid container spacing={6} className='parentGrid'>
-        <Grid item xs={6} className='alignTextCenter'>
+        <Grid item sm={12} md={6}className='alignTextCenter'>
           {textSide === 'right' ? (
             <Box>
               {withIcon && <MenuBookRoundedIcon fontSize='large'/>}
@@ -25,7 +25,7 @@ export const HeroSectionMedium = ({textSide, title, paragraph, withIcon}) => {
               </div>
               )}
         </Grid>
-        <Grid item xs={6} className='alignTextCenter'>
+        <Grid item sm={12} md={6} className='alignTextCenter'>
             {textSide === 'right' ? (
               <div className='heroImageMedium'>
                 {/* <img

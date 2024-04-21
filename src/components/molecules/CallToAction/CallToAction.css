@@ -1,7 +1,21 @@
 .call-to-action-buttons {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   margin: 2rem 0;
+  min-width: 180px;
+}
+
+.call-to-action-buttons.center {
+  justify-content: center;
+}
+
+.call-to-action-buttons.left {
+  justify-content: flex-start;
+}
+
+.call-to-action-buttons.right {
+  justify-content: flex-end;
 }
 
 .learn-more {

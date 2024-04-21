@@ -17,16 +17,16 @@ export const HeroSectionLarge = ({textSide, title, paragraph, redirectURL, signU
   return (
     <Box className={`heroBox`}>
       <Grid container spacing={6} className='parentGrid'>
-        <Grid item xs={6}>
+        <Grid item sm={12} md={6}>
           {textSide === 'right' ? (
             <Typography variant='h2' className='title'>{title}</Typography>
           ) : (
             <CallToAction paragraph={paragraph} redirectLink={redirectURL} signUpLink={signUpLink} signUpVariant={signUpVariant} learnMoreVariant={learnMoreVariant}/>
           )}
         </Grid>
-        <Grid item xs={6}>
+        <Grid item sm={12} md={6}>
             {textSide === 'right' ? (
-              <CallToAction paragraph={paragraph} redirectLink={redirectURL} signUpLink={signUpLink} signUpVariant={signUpVariant} learnMoreVariant={learnMoreVariant}/>
+              <CallToAction paragraph={paragraph} redirectLink={redirectURL} signUpLink={signUpLink} signUpVariant={signUpVariant} learnMoreVariant={learnMoreVariant} alignment='left'/>
             ) : (
               <Typography variant='h2'>{title}</Typography>
             )}
